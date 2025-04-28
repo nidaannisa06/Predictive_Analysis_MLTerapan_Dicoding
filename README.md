@@ -35,7 +35,7 @@ Berdasarkan masalah dan tujuan di atas, maka dapat diterapkan solusi sebagai ber
 
 # Data Understanding
 
-- Dataset yang digunakan adalah dataset CO2 Emission by Vehicle yang diambil dari platform penyedia data Kaggle. File yang digunakan berekstensi .csv yaitu CO2 Emissions_Canada.csv.
+- Dataset yang digunakan adalah dataset [CO2 Emission by Vehicle](https://www.kaggle.com/datasets/debajyotipodder/co2-emission-by-vehicles) yang diambil dari platform penyedia data Kaggle. File yang digunakan berekstensi .csv yaitu CO2 Emissions_Canada.csv.
 
 - Dataset memiliki informasi tentang variasi emisi CO2 dari sebuah kendaraan tergantung pada berbagai fiturnya (ukuran mesin, jumlah silinder, jumlah transmisi, tipe bahan bakar, konsumsi bahan).
 
