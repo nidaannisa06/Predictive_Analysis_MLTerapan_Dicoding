@@ -174,7 +174,7 @@ df.columns
 - Sintaks ini digunakan untuk membersihkan dan menstandarisasi nama-nama kolom (fitur) dalam DataFrame df. Tujuannya adalah untuk membuat nama kolom menjadi lebih konsisten, mudah digunakan, dan sesuai untuk analisis data atau pemodelan machine learning.
 
 ### Visualisasi Distribusi CO2
-![Distribusi Emisi CO2](https://drive.google.com/file/d/1r3GXaE6np9qjBfrkzg2kdOdlrtcG8JGc/view?usp=drive_link)
+![Distribusi Emisi CO2](https://github.com/nidaannisa06/Predictive_Analysis_MLTerapan_Dicoding/blob/main/Images/Distribusi%20Emisi%20CO2.png)
 
 Penjelasan Gambar:
 
@@ -184,33 +184,33 @@ Distribusi emisi CO2 dalam dataset ini menunjukkan pola konsentrasi di sekitar n
 
 ### Visualiasasi Distribusi Kelas Kendaraan
 
-![Distribusi Vehicle Class](https://drive.google.com/file/d/1nEdAAHSdk6XH5tXci-5LZ6gc9q6A80_P/view?usp=drive_link)
+![Distribusi Vehicle Class](https://github.com/nidaannisa06/Predictive_Analysis_MLTerapan_Dicoding/blob/main/Images/vehicle_type_distribution.png)
 Penjelasan:
 Jenis kendaraan "COMPACT", "SUV - SMALL", dan "MID-SIZE" adalah **top three dominant** dalam data ini, sementara van, minivan, dan kendaraan khusus jumlahnya relatif sedikit.
 
 ## **EDA - Bivariate Analisis**
 
-![CO2 Emissions by Vehicle Class](https://drive.google.com/file/d/1UZk8uSTP9YTr6m9M-p_mUwylE7G0utSm/view?usp=drive_link)
+![CO2 Emissions by Vehicle Class](https://github.com/nidaannisa06/Predictive_Analysis_MLTerapan_Dicoding/blob/main/Images/co2emissions_by_vehicle_class.png)
 
 Penjelasan:
 Grafik ini memperlihatkan bahwa kelas kendaraan yang lebih kecil seperti minicompact, subcompact, dan compact cenderung menghasilkan emisi CO2 yang lebih rendah secara keseluruhan. Sebaliknya, kelas kendaraan yang lebih besar seperti SUV standard, van kargo, dan truk standar umumnya memiliki tingkat emisi CO2 yang lebih tinggi. Selain itu, terdapat variasi emisi yang signifikan di dalam setiap kelas kendaraan, dan keberadaan outlier menunjukkan adanya beberapa kendaraan dengan tingkat emisi yang tidak biasa untuk kelasnya.
 
-![Average Fuel Consumption by Vehicle Class](https://drive.google.com/file/d/1vO3ji6uip5SgM_Z_7cZf2FxcgUyLJYjf/view?usp=drive_link)
+![Average Fuel Consumption by Vehicle Class](https://github.com/nidaannisa06/Predictive_Analysis_MLTerapan_Dicoding/blob/main/Images/average_fuel_consumption_by_vehicle_class.png)
 
 Penjelasan: Grafik ini menunjukkan bahwa terdapat perbedaan yang signifikan dalam rata-rata konsumsi bahan bakar antar kelas kendaraan. Kendaraan yang lebih kecil seperti pickup truck kecil, station wagon kecil, dan compact cenderung paling hemat bahan bakar. Sebaliknya, kendaraan yang lebih besar dan fungsional seperti van penumpang, van kargo, dan truk standar memiliki rata-rata konsumsi bahan bakar yang paling tinggi.
 
 ## **EDA - Multivariate Analisis**
-![Matriks Korelasi](https://drive.google.com/uc?export=view&id=1KgucM-03x7tiey5tIIm-v_IUZIXcIfF5)
+![Matriks Korelasi](https://github.com/nidaannisa06/Predictive_Analysis_MLTerapan_Dicoding/blob/main/Images/correlation_matrix.png)
 
 Penjelasan:
 Matriks korelasi ini mengungkapkan hubungan yang kuat antara ukuran mesin, jumlah silinder, konsumsi bahan bakar (dalam liter/100km), dan emisi CO2. Semakin besar ukuran mesin dan jumlah silinder, cenderung semakin tinggi konsumsi bahan bakar dan emisi CO2. Sebaliknya, variabel-variabel ini berkorelasi negatif kuat dengan efisiensi bahan bakar yang diukur dalam MPG. Korelasi yang sangat kuat antara berbagai metrik konsumsi bahan bakar (city, highway, combined) dan emisi CO2 juga menegaskan hubungan langsung antara seberapa banyak bahan bakar yang digunakan dan seberapa banyak CO2 yang dihasilkan.
 
-![Pairplot Hubungan Antar Fitur Numerik](https://drive.google.com/file/d/1ADSlXG7LyZdHssbUNhYM4JYyWZPbD5id/view?usp=drive_link)
+![Pairplot Hubungan Antar Fitur Numerik](https://github.com/nidaannisa06/Predictive_Analysis_MLTerapan_Dicoding/blob/main/Images/pairplot.png)
 
 Penjelasan:
 Pair plot ini secara visual mengkonfirmasi hubungan yang kuat antara ukuran mesin, jumlah silinder, konsumsi bahan bakar, dan emisi CO2 yang sebelumnya ditunjukkan oleh matriks korelasi. Ukuran mesin dan jumlah silinder yang lebih besar umumnya berkaitan dengan konsumsi bahan bakar dan emisi CO2 yang lebih tinggi, serta efisiensi bahan bakar (MPG) yang lebih rendah. Sebaliknya, konsumsi bahan bakar yang tinggi (dalam L/100km) berkorelasi kuat dengan emisi CO2 yang tinggi dan efisiensi bahan bakar (MPG) yang rendah. Plot ini juga memberikan gambaran tentang distribusi masing-masing variabel secara individual.
 
-![Ukuran Mesin dan Emisi CO2: Pengaruh Tipe Bahan Bakar](https://drive.google.com/file/d/1kIyUyXhe-I14DLDTF_cc9seblNPD8qpk/view?usp=drive_link)
+![Ukuran Mesin dan Emisi CO2: Pengaruh Tipe Bahan Bakar](https://github.com/nidaannisa06/Predictive_Analysis_MLTerapan_Dicoding/blob/main/Images/relationship_between_enginesize_and_CO2_accordingtofueltype.png)
 
 Penjelasan:
 Grafik ini menunjukkan bahwa secara umum, terdapat korelasi positif antara ukuran mesin dan emisi CO2 di sebagian besar jenis bahan bakar. Artinya, semakin besar ukuran mesin, semakin tinggi emisi CO2 yang dihasilkan. Namun, hubungan ini dapat bervariasi dalam kekuatan dan sebaran data tergantung pada jenis bahan bakar yang digunakan. Satu kategori bahan bakar yaitu Natural Gas (fuel_type = N) tampak sangat jarang atau memiliki karakteristik emisi yang berbeda.
@@ -345,18 +345,20 @@ y_pred_knn = knn_model.predict(X_test_scaled_df)
 Bagian ini akan fokus pada evaluasi performa model-model prediksi emisi CO2 yang telah dikembangkan. Dengan menggunakan metrik evaluasi standar seperti **Mean Squared Error (MSE)** dan R-squared (R²)**, kita akan menganalisis seberapa akurat model-model tersebut dalam memprediksi emisi pada data uji. MSE dan R-squared seringkali dianggap cukup untuk memberikan evaluasi yang solid terhadap model regresi. MSE berfokus pada besarnya kesalahan prediksi, sementara R-squared memberikan gambaran tentang seberapa baik model menjelaskan variasi data. Dengan menganalisis kedua metrik ini, kita dapat memperoleh pemahaman yang baik tentang seberapa akurat dan seberapa baik model-model prediksi emisi CO2 kita sesuai dengan data yang ada. Hasil evaluasi ini akan memberikan wawasan penting mengenai kualitas prediksi dari setiap model.
 
 1. Mean Squared Error (MSE)
-- Mean Squared Error (MSE) digunakan sebagai ukuran absolut dari rata-rata besarnya kesalahan prediksi. Dengan menghitung rata-rata kuadrat selisih antara nilai emisi CO2 yang diprediksi oleh model dan nilai emisi CO2 sebenarnya dari data uji, MSE memberikan indikasi seberapa jauh prediksi model menyimpang dari nilai aslinya. Nilai MSE yang lebih rendah menunjukkan bahwa model memiliki kesalahan prediksi yang lebih kecil, dan oleh karena itu, performanya lebih baik dalam memprediksi tingkat emisi CO2.
+- Mean Squared Error (MSE) digunakan sebagai ukuran absolut dari rata-rata besarnya kesalahan prediksi. Dengan menghitung rata-rata kuadrat selisih antara nilai emisi CO2 yang diprediksi oleh model dan nilai emisi CO2 sebenarnya dari data uji, MSE memberikan indikasi seberapa jauh prediksi model menyimpang dari nilai aslinya. Nilai MSE yang lebih rendah menunjukkan bahwa model memiliki kesalahan prediksi yang lebih kecil, dan oleh karena itu, performanya lebih baik dalam memprediksi tingkat emisi CO2. Rumus MSE diformulakan sebagai berikut:
 
-![Rumus MSE](https://drive.google.com/file/d/1tFbqhVrkJhjc2jnBzvcfCT2LFiO5P3M0/view?usp=drive_link)
+$$
+\text{MSE} = \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2
+$$
 
-Mean Squared Error (MSE) digunakan sebagai ukuran absolut dari rata-rata besarnya kesalahan prediksi. Secara matematis, MSE dihitung dengan **mengambil selisih antara setiap nilai emisi CO2 yang diprediksi oleh model (y^​i​) dan nilai emisi CO2 sebenarnya (yi​) dari data uji. Selisih ini kemudian dikuadratkan ((yi​−y^​i​)2) untuk memastikan bahwa semua kesalahan (baik positif maupun negatif) berkontribusi positif terhadap nilai total dan untuk memberikan bobot yang lebih besar pada kesalahan yang lebih besar. Akhirnya, nilai-nilai kuadrat selisih ini dijumlahkan untuk seluruh data uji dan dibagi dengan jumlah total sampel (n) untuk mendapatkan rata-rata kuadrat kesalahan:
+Mean Squared Error (MSE) digunakan sebagai ukuran absolut dari rata-rata besarnya kesalahan prediksi. Secara matematis, MSE dihitung dengan mengambil selisih antara setiap nilai emisi CO₂ yang diprediksi oleh model (ŷᵢ) dan nilai emisi CO₂ sebenarnya (yᵢ) dari data uji. Selisih ini kemudian dikuadratkan [(yᵢ − ŷᵢ)²] untuk memastikan bahwa semua kesalahan (baik positif maupun negatif) berkontribusi positif terhadap nilai total dan untuk memberikan bobot yang lebih besar pada kesalahan yang lebih besar. Akhirnya, nilai-nilai kuadrat selisih ini dijumlahkan untuk seluruh data uji dan dibagi dengan jumlah total sampel (n) untuk mendapatkan rata-rata kuadrat kesalahan.
 
 Nilai MSE yang dihasilkan memberikan indikasi seberapa jauh, secara rata-rata, prediksi model menyimpang dari nilai emisi CO2 yang sebenarnya. Semakin rendah nilai MSE, semakin kecil rata-rata kuadrat kesalahan prediksi, dan oleh karena itu, performa model dalam memprediksi tingkat emisi CO2 dianggap semakin baik.
 
 2. R-squared (R²)
 - R-squared (Koefisien Determinasi) memberikan perspektif tentang seberapa baik model yang sudah dibuat cocok dengan data secara keseluruhan. Metrik ini mengukur proporsi varians dalam variabel target (emisi CO2) yang dapat dijelaskan oleh model. Nilai R-squared berkisar antara 0 dan 1, di mana nilai yang lebih mendekati 1 mengindikasikan bahwa model mampu menjelaskan sebagian besar variabilitas dalam data emisi CO2. R-squared membantu untuk memahami seberapa baik model dapat menangkap pola dan tren yang ada dalam data dibandingkan dengan model dasar yang hanya memprediksi nilai rata-rata emisi.
 
-![Rumurs R-squared](https://drive.google.com/file/d/1GbOZqoXqraeQyM7GSi3fN1ZSs7DqEyeG/view?usp=drive_link)
+![Rumurs R-squared](https://github.com/nidaannisa06/Predictive_Analysis_MLTerapan_Dicoding/blob/main/Images/Rsquared.png)
 
 Melalui rumus ini dapat dilihat seberapa kecil kesalahan model dibandingkan dengan variasi total data. Jika kesalahan model yang dibuat kecil (SSres​ kecil), maka nilai SStot​SSres​​ juga kecil, dan R2 akan mendekati 1. Ini berarti model berhasil menjelaskan sebagian besar variasi dalam emisi CO2 dan cocok dengan data dengan baik.
 
@@ -366,9 +368,9 @@ Jadi, nilai R-squared yang tinggi itu bagus karena artinya model kita pintar dal
 
 ### 3. Visualisasi Perbandingan MSE dan R-squared antar Model
 
-![Visualisasi MSE antar Model](https://drive.google.com/file/d/1WjJ0HUcche--_BwlIHPUidFHkvtr_AgA/view?usp=drive_link)
+![Visualisasi MSE antar Model](https://github.com/nidaannisa06/Predictive_Analysis_MLTerapan_Dicoding/blob/main/Images/Cuplikan%20layar%202025-04-25%20162705.png)
 
-![Visualisasi R-squared antar Model](https://drive.google.com/file/d/1DYbmWubUZ8sbQO4bzd3pOeA6C77PYSJo/view?usp=drive_link)
+![Visualisasi R-squared antar Model](https://github.com/nidaannisa06/Predictive_Analysis_MLTerapan_Dicoding/blob/main/Images/Cuplikan%20layar%202025-04-25%20162639.png)
 
 #### **Penjelasan :**
 
