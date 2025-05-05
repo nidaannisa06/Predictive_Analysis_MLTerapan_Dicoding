@@ -174,7 +174,8 @@ df.columns
 - Sintaks ini digunakan untuk membersihkan dan menstandarisasi nama-nama kolom (fitur) dalam DataFrame df. Tujuannya adalah untuk membuat nama kolom menjadi lebih konsisten, mudah digunakan, dan sesuai untuk analisis data atau pemodelan machine learning.
 
 ### Visualisasi Distribusi CO2
-![Distribusi Emisi CO2](https://github.com/nidaannisa06/Predictive_Analysis_MLTerapan_Dicoding/blob/main/Images/Distribusi%20Emisi%20CO2.png)
+
+![Distribusi Emisi CO2](https://github.com/user-attachments/assets/4f4df750-19d9-4871-be57-560e59e47b3b)
 
 Penjelasan Gambar:
 
@@ -183,34 +184,35 @@ Grafik ini menyajikan distribusi frekuensi emisi CO2 dari sebuah dataset. Sumbu 
 Distribusi emisi CO2 dalam dataset ini menunjukkan pola konsentrasi di sekitar nilai 200-300, dengan frekuensi tertinggi pada sekitar 250. Adanya kemiringan positif mengindikasikan bahwa meskipun sebagian besar nilai emisi relatif rendah, terdapat beberapa kejadian dengan emisi yang jauh lebih tinggi. Pemahaman terhadap distribusi ini penting untuk analisis lebih lanjut terkait faktor-faktor penyebab emisi CO2 dan potensi dampaknya.
 
 ### Visualiasasi Distribusi Kelas Kendaraan
+![vehicle_type_distribution](https://github.com/user-attachments/assets/02316820-c879-4f04-bb70-f6ecdde22190)
 
-![Distribusi Vehicle Class](https://github.com/nidaannisa06/Predictive_Analysis_MLTerapan_Dicoding/blob/main/Images/vehicle_type_distribution.png)
 Penjelasan:
 Jenis kendaraan "COMPACT", "SUV - SMALL", dan "MID-SIZE" adalah **top three dominant** dalam data ini, sementara van, minivan, dan kendaraan khusus jumlahnya relatif sedikit.
 
 ## **EDA - Bivariate Analisis**
 
-![CO2 Emissions by Vehicle Class](https://github.com/nidaannisa06/Predictive_Analysis_MLTerapan_Dicoding/blob/main/Images/co2emissions_by_vehicle_class.png)
+![CO2 Emissions by Vehicle Class](https://github.com/user-attachments/assets/104ae01e-d717-49f0-b690-563a8a2ccea8)
 
 Penjelasan:
 Grafik ini memperlihatkan bahwa kelas kendaraan yang lebih kecil seperti minicompact, subcompact, dan compact cenderung menghasilkan emisi CO2 yang lebih rendah secara keseluruhan. Sebaliknya, kelas kendaraan yang lebih besar seperti SUV standard, van kargo, dan truk standar umumnya memiliki tingkat emisi CO2 yang lebih tinggi. Selain itu, terdapat variasi emisi yang signifikan di dalam setiap kelas kendaraan, dan keberadaan outlier menunjukkan adanya beberapa kendaraan dengan tingkat emisi yang tidak biasa untuk kelasnya.
 
-![Average Fuel Consumption by Vehicle Class](https://github.com/nidaannisa06/Predictive_Analysis_MLTerapan_Dicoding/blob/main/Images/average_fuel_consumption_by_vehicle_class.png)
+![Average Fuel Consumption](https://github.com/user-attachments/assets/cf05129e-c869-42f5-b619-58e939bc2e22)
 
 Penjelasan: Grafik ini menunjukkan bahwa terdapat perbedaan yang signifikan dalam rata-rata konsumsi bahan bakar antar kelas kendaraan. Kendaraan yang lebih kecil seperti pickup truck kecil, station wagon kecil, dan compact cenderung paling hemat bahan bakar. Sebaliknya, kendaraan yang lebih besar dan fungsional seperti van penumpang, van kargo, dan truk standar memiliki rata-rata konsumsi bahan bakar yang paling tinggi.
 
 ## **EDA - Multivariate Analisis**
-![Matriks Korelasi](https://github.com/nidaannisa06/Predictive_Analysis_MLTerapan_Dicoding/blob/main/Images/correlation_matrix.png)
+
+![correlation_matrix](https://github.com/user-attachments/assets/8527d541-8cd5-43ae-9bbb-f40f5982ffa1)
 
 Penjelasan:
 Matriks korelasi ini mengungkapkan hubungan yang kuat antara ukuran mesin, jumlah silinder, konsumsi bahan bakar (dalam liter/100km), dan emisi CO2. Semakin besar ukuran mesin dan jumlah silinder, cenderung semakin tinggi konsumsi bahan bakar dan emisi CO2. Sebaliknya, variabel-variabel ini berkorelasi negatif kuat dengan efisiensi bahan bakar yang diukur dalam MPG. Korelasi yang sangat kuat antara berbagai metrik konsumsi bahan bakar (city, highway, combined) dan emisi CO2 juga menegaskan hubungan langsung antara seberapa banyak bahan bakar yang digunakan dan seberapa banyak CO2 yang dihasilkan.
 
-![Pairplot Hubungan Antar Fitur Numerik](https://github.com/nidaannisa06/Predictive_Analysis_MLTerapan_Dicoding/blob/main/Images/pairplot.png)
+![pairplot](https://github.com/user-attachments/assets/a175a0b3-13a9-4744-999b-cf3fe332c61d)
 
 Penjelasan:
 Pair plot ini secara visual mengkonfirmasi hubungan yang kuat antara ukuran mesin, jumlah silinder, konsumsi bahan bakar, dan emisi CO2 yang sebelumnya ditunjukkan oleh matriks korelasi. Ukuran mesin dan jumlah silinder yang lebih besar umumnya berkaitan dengan konsumsi bahan bakar dan emisi CO2 yang lebih tinggi, serta efisiensi bahan bakar (MPG) yang lebih rendah. Sebaliknya, konsumsi bahan bakar yang tinggi (dalam L/100km) berkorelasi kuat dengan emisi CO2 yang tinggi dan efisiensi bahan bakar (MPG) yang rendah. Plot ini juga memberikan gambaran tentang distribusi masing-masing variabel secara individual.
 
-![Ukuran Mesin dan Emisi CO2: Pengaruh Tipe Bahan Bakar](https://github.com/nidaannisa06/Predictive_Analysis_MLTerapan_Dicoding/blob/main/Images/relationship_between_enginesize_and_CO2_accordingtofueltype.png)
+![relationship_between_enginesize_and_CO2_accordingtofueltype](https://github.com/user-attachments/assets/960241a8-ce9e-4b6a-b65f-8cf851c6a190)
 
 Penjelasan:
 Grafik ini menunjukkan bahwa secara umum, terdapat korelasi positif antara ukuran mesin dan emisi CO2 di sebagian besar jenis bahan bakar. Artinya, semakin besar ukuran mesin, semakin tinggi emisi CO2 yang dihasilkan. Namun, hubungan ini dapat bervariasi dalam kekuatan dan sebaran data tergantung pada jenis bahan bakar yang digunakan. Satu kategori bahan bakar yaitu Natural Gas (fuel_type = N) tampak sangat jarang atau memiliki karakteristik emisi yang berbeda.
@@ -358,7 +360,7 @@ Nilai MSE yang dihasilkan memberikan indikasi seberapa jauh, secara rata-rata, p
 2. R-squared (R²)
 - R-squared (Koefisien Determinasi) memberikan perspektif tentang seberapa baik model yang sudah dibuat cocok dengan data secara keseluruhan. Metrik ini mengukur proporsi varians dalam variabel target (emisi CO2) yang dapat dijelaskan oleh model. Nilai R-squared berkisar antara 0 dan 1, di mana nilai yang lebih mendekati 1 mengindikasikan bahwa model mampu menjelaskan sebagian besar variabilitas dalam data emisi CO2. R-squared membantu untuk memahami seberapa baik model dapat menangkap pola dan tren yang ada dalam data dibandingkan dengan model dasar yang hanya memprediksi nilai rata-rata emisi.
 
-![Rumurs R-squared](https://github.com/nidaannisa06/Predictive_Analysis_MLTerapan_Dicoding/blob/main/Images/Rsquared.png)
+![Rsquared](https://github.com/user-attachments/assets/ce42f722-3465-42be-81b5-aa00f60ba7f0)
 
 Melalui rumus ini dapat dilihat seberapa kecil kesalahan model dibandingkan dengan variasi total data. Jika kesalahan model yang dibuat kecil (SSres​ kecil), maka nilai SStot​SSres​​ juga kecil, dan R2 akan mendekati 1. Ini berarti model berhasil menjelaskan sebagian besar variasi dalam emisi CO2 dan cocok dengan data dengan baik.
 
@@ -368,9 +370,9 @@ Jadi, nilai R-squared yang tinggi itu bagus karena artinya model kita pintar dal
 
 ### 3. Visualisasi Perbandingan MSE dan R-squared antar Model
 
-![Visualisasi MSE antar Model](https://github.com/nidaannisa06/Predictive_Analysis_MLTerapan_Dicoding/blob/main/Images/Cuplikan%20layar%202025-04-25%20162705.png)
+![MSE Antar Algoritma](https://github.com/user-attachments/assets/0917c5fa-4527-4ddc-b1f7-4c87a845d40d)
 
-![Visualisasi R-squared antar Model](https://github.com/nidaannisa06/Predictive_Analysis_MLTerapan_Dicoding/blob/main/Images/Cuplikan%20layar%202025-04-25%20162639.png)
+![Rsquared](https://github.com/user-attachments/assets/772d808a-149d-4f83-9150-40614b47c663)
 
 #### **Penjelasan :**
 
