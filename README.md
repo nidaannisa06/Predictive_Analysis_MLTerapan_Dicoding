@@ -368,7 +368,18 @@ Sebaliknya, jika kesalahan model besar (SSres​ besar, hampir sama dengan SStot
 
 Jadi, nilai R-squared yang tinggi itu bagus karena artinya model kita pintar dalam 'menebak' emisi CO2 berdasarkan fitur-fitur kendaraan.
 
-### 3. Visualisasi Perbandingan MSE dan R-squared antar Model
+### Analisis Feature Importance
+![Feature Importance (Random Forest Regression)](https://github.com/user-attachments/assets/4635e104-ffe3-443b-b07c-9d0fafdcf146)
+
+![Feature Importance (Linear Regression)](https://github.com/user-attachments/assets/0a4136bd-5157-4297-9f8c-85ae1826a5b3)
+
+![Feature Importance (GradientBoosting Regressor)](https://github.com/user-attachments/assets/732a3d80-83eb-4a74-9455-c912f2978f11)
+
+![Feature Importance (Decision Tree Regression)](https://github.com/user-attachments/assets/8715bf75-cb69-404b-8676-19a9f86c4ea5)
+
+Analisis feature importance mengungkapkan bahwa konsumsi bahan bakar (terutama fuel_consumption_comb dan fuel_consumption_comb (mpg)) secara konsisten muncul sebagai fitur yang sangat penting di semua model berbasis pohon (Decision Tree, Random Forest, dan Gradient Boosting). Jenis bahan bakar (fuel_type_E, dan jenis lainnya) juga signifikan di semua model, terutama di Linear Regression dan juga di model berbasis pohon. Merek mobil (make_BUGATTI) lebih menonjol di Linear Regression, sementara fitur seperti ukuran mesin (engine_size) dan jumlah silinder (cylinders) mendapatkan perhatian lebih di Gradient Boosting.
+
+### Visualisasi Perbandingan MSE dan R-squared antar Model
 
 ![MSE Antar Algoritma](https://github.com/user-attachments/assets/0917c5fa-4527-4ddc-b1f7-4c87a845d40d)
 
